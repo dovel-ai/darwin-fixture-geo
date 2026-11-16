@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0",
+  "step": 0,
+  "fixes": 0,
+  "functions": [
+    { "kind": "distance", "name": "Distance" },
+    { "kind": "bearing", "name": "Bearing" },
+    { "kind": "midpoint", "name": "Midpoint" },
+    { "kind": "format", "name": "FormatPoint" },
+    { "kind": "parse", "name": "ParsePoint" }
+  ]
+}

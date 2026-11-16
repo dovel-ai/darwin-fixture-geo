@@ -1,0 +1,56 @@
+name: Release cycle
+
+# Every 12 hours this library publishes its next release (.github/fixture/release-next.mjs): a fix, a deprecation, a
+# removal, a rename or a signature change, as a tagged Go module release with notes. A repository depending on it
+# (dovel-ai/darwin-fixture-app) is watched by Darwin, which should find each change and propose or hold it.
+on:
+  schedule:
+    - cron: '30 */12 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-cycle
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Next release
+        id: next
+        run: |
+          set -euo pipefail
+          node .github/fixture/release-next.mjs > "$RUNNER_TEMP/release.json"
+          node -e 'const r = require(process.argv[1]); require("fs").writeFileSync(process.argv[2], r.notes); console.log(`version=${r.version}`); console.log(`op=${r.op}`)' \
+            "$RUNNER_TEMP/release.json" "$RUNNER_TEMP/notes.md" >> "$GITHUB_OUTPUT"
+      - name: The release builds and passes its tests
+        run: |
+          test -z "$(gofmt -l .)"
+          go vet ./...
+          go test ./...
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.next.outputs.version }}
+          OP: ${{ steps.next.outputs.op }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Release $VERSION ($OP)"
+          git tag "$VERSION"
+          git push origin HEAD "$VERSION"
+          gh release create "$VERSION" --title "$VERSION" --notes-file "$RUNNER_TEMP/notes.md"
+          # The module proxy lists a new tag once someone asks for it: ask, so a scan finds the release.
+          for attempt in 1 2 3 4 5; do
+            if GOPROXY=https://proxy.golang.org GOFLAGS=-mod=mod go list -m "github.com/dovel-ai/darwin-fixture-geo@$VERSION"; then break; fi
+            sleep 30
+          done
