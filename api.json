@@ -1,12 +1,27 @@
 {
-  "version": "0.1.0",
-  "step": 0,
-  "fixes": 0,
+  "version": "0.1.1",
+  "step": 1,
+  "fixes": 1,
   "functions": [
-    { "kind": "distance", "name": "Distance" },
-    { "kind": "bearing", "name": "Bearing" },
-    { "kind": "midpoint", "name": "Midpoint" },
-    { "kind": "format", "name": "FormatPoint" },
-    { "kind": "parse", "name": "ParsePoint" }
+    {
+      "kind": "distance",
+      "name": "Distance"
+    },
+    {
+      "kind": "bearing",
+      "name": "Bearing"
+    },
+    {
+      "kind": "midpoint",
+      "name": "Midpoint"
+    },
+    {
+      "kind": "format",
+      "name": "FormatPoint"
+    },
+    {
+      "kind": "parse",
+      "name": "ParsePoint"
+    }
   ]
 }
