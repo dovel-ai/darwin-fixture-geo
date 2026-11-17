@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.1.2 (2026-11-17)
+
+### Added
+
+- `InitialBearing`, which replaces `Bearing`.
+
+### Deprecated
+
+- `Bearing` is deprecated in favor of `InitialBearing` and will be removed in the next minor release.
+
 ## v0.1.1 (2026-11-17)
 
 ### Fixed

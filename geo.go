@@ -6,6 +6,8 @@ package geo
 func Distance(a, b Point) float64 { return haversine(a, b) }
 
 // Bearing returns the initial bearing from a to b in degrees.
+//
+// Deprecated: use InitialBearing.
 func Bearing(a, b Point) float64 { return initialBearing(a, b) }
 
 // Midpoint returns the point halfway between a and b on the great circle.
@@ -16,3 +18,6 @@ func FormatPoint(p Point) string { return formatPoint(p) }
 
 // ParsePoint reads a point written as "lat,lon".
 func ParsePoint(s string) (Point, error) { return parsePoint(s) }
+
+// InitialBearing returns the initial bearing from a to b in degrees.
+func InitialBearing(a, b Point) float64 { return initialBearing(a, b) }
