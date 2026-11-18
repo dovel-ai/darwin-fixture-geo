@@ -1,11 +1,11 @@
 {
-  "version": "0.2.0",
-  "step": 3,
+  "version": "0.3.0",
+  "step": 4,
   "fixes": 1,
   "functions": [
     {
       "kind": "distance",
-      "name": "Distance"
+      "name": "HaversineDistance"
     },
     {
       "kind": "midpoint",

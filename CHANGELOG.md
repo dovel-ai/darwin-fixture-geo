@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.0 (2026-11-18)
+
+### Breaking changes
+
+- `Distance` has been renamed to `HaversineDistance` (`Distance` -> `HaversineDistance`); its behavior is unchanged.
+
 ## v0.2.0 (2026-11-18)
 
 ### Breaking changes

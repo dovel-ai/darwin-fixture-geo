@@ -4,9 +4,9 @@ package geo
 
 import "testing"
 
-func TestDistance(t *testing.T) {
-	if d := Distance(Point{Lat: 52.52, Lon: 13.405}, Point{Lat: 48.8566, Lon: 2.3522}); d < 870 || d > 885 {
-		t.Fatalf("Distance: %v", d)
+func TestHaversineDistance(t *testing.T) {
+	if d := HaversineDistance(Point{Lat: 52.52, Lon: 13.405}, Point{Lat: 48.8566, Lon: 2.3522}); d < 870 || d > 885 {
+		t.Fatalf("HaversineDistance: %v", d)
 	}
 }
 
