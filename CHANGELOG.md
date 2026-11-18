@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.0 (2026-11-18)
+
+### Breaking changes
+
+- The deprecated `Bearing` function has been removed; use `InitialBearing` instead (`Bearing` -> `InitialBearing`).
+
 ## v0.1.2 (2026-11-17)
 
 ### Added

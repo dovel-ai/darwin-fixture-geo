@@ -1,16 +1,11 @@
 {
-  "version": "0.1.2",
-  "step": 2,
+  "version": "0.2.0",
+  "step": 3,
   "fixes": 1,
   "functions": [
     {
       "kind": "distance",
       "name": "Distance"
-    },
-    {
-      "kind": "bearing",
-      "name": "Bearing",
-      "deprecatedFor": "InitialBearing"
     },
     {
       "kind": "midpoint",

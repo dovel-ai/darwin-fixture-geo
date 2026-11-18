@@ -10,12 +10,6 @@ func TestDistance(t *testing.T) {
 	}
 }
 
-func TestBearingDeprecated(t *testing.T) {
-	if b := Bearing(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}); b < 89.9 || b > 90.1 {
-		t.Fatalf("Bearing: %v", b)
-	}
-}
-
 func TestMidpoint(t *testing.T) {
 	if m := Midpoint(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}); m.Lon < 4.99 || m.Lon > 5.01 {
 		t.Fatalf("Midpoint: %v", m)
