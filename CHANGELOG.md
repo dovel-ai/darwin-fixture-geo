@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.3.2 (2026-11-19)
+
+### Added
+
+- `GreatCircleDistance`, which replaces `HaversineDistance`.
+
+### Deprecated
+
+- `HaversineDistance` is deprecated in favor of `GreatCircleDistance` and will be removed in the next minor release.
+
 ## v0.3.1 (2026-11-19)
 
 ### Fixed

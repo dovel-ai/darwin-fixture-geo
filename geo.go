@@ -3,6 +3,8 @@
 package geo
 
 // HaversineDistance returns the great-circle distance between a and b in kilometres.
+//
+// Deprecated: use GreatCircleDistance.
 func HaversineDistance(a, b Point) float64 { return haversine(a, b) }
 
 // Midpoint returns the point halfway between a and b on the great circle.
@@ -16,3 +18,6 @@ func ParsePoint(s string) (Point, error) { return parsePoint(s) }
 
 // InitialBearing returns the initial bearing from a to b in degrees.
 func InitialBearing(a, b Point) float64 { return initialBearing(a, b) }
+
+// GreatCircleDistance returns the great-circle distance between a and b in kilometres.
+func GreatCircleDistance(a, b Point) float64 { return haversine(a, b) }

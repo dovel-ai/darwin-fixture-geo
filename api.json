@@ -1,11 +1,12 @@
 {
-  "version": "0.3.1",
-  "step": 5,
+  "version": "0.3.2",
+  "step": 6,
   "fixes": 2,
   "functions": [
     {
       "kind": "distance",
-      "name": "HaversineDistance"
+      "name": "HaversineDistance",
+      "deprecatedFor": "GreatCircleDistance"
     },
     {
       "kind": "midpoint",
@@ -22,6 +23,10 @@
     {
       "kind": "bearing",
       "name": "InitialBearing"
+    },
+    {
+      "kind": "distance",
+      "name": "GreatCircleDistance"
     }
   ]
 }
