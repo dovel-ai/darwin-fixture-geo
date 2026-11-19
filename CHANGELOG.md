@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.1 (2026-11-19)
+
+### Fixed
+
+- Longitudes are normalized to (-180, 180] so points across the antimeridian compare equal.
+
 ## v0.3.0 (2026-11-18)
 
 ### Breaking changes

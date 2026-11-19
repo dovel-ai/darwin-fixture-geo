@@ -1,7 +1,7 @@
 {
-  "version": "0.3.0",
-  "step": 4,
-  "fixes": 1,
+  "version": "0.3.1",
+  "step": 5,
+  "fixes": 2,
   "functions": [
     {
       "kind": "distance",
