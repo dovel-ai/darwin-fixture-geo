@@ -4,9 +4,9 @@ package geo
 
 import "testing"
 
-func TestMidpoint(t *testing.T) {
-	if m := Midpoint(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}); m.Lon < 4.99 || m.Lon > 5.01 {
-		t.Fatalf("Midpoint: %v", m)
+func TestInterpolate(t *testing.T) {
+	if m := Interpolate(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}, 0.5); m.Lon < 4.99 || m.Lon > 5.01 {
+		t.Fatalf("Interpolate: %v", m)
 	}
 }
 

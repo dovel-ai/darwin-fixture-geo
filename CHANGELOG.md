@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.5.0 (2026-11-20)
+
+### Breaking changes
+
+- `Midpoint(a, b)` has been replaced by `Interpolate(a, b, fraction)` (`Midpoint` -> `Interpolate`): pass `0.5` as `fraction` for the point halfway between `a` and `b`, as `Midpoint` returned.
+
 ## v0.4.0 (2026-11-20)
 
 ### Breaking changes

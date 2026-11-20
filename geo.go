@@ -2,8 +2,8 @@
 
 package geo
 
-// Midpoint returns the point halfway between a and b on the great circle.
-func Midpoint(a, b Point) Point { return interpolate(a, b, 0.5) }
+// Interpolate returns the point on the great circle from a to b at the given fraction (0.5: halfway).
+func Interpolate(a, b Point, fraction float64) Point { return interpolate(a, b, fraction) }
 
 // FormatPoint formats p as "lat,lon" with five decimals.
 func FormatPoint(p Point) string { return formatPoint(p) }
