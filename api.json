@@ -1,13 +1,8 @@
 {
-  "version": "0.3.2",
-  "step": 6,
+  "version": "0.4.0",
+  "step": 7,
   "fixes": 2,
   "functions": [
-    {
-      "kind": "distance",
-      "name": "HaversineDistance",
-      "deprecatedFor": "GreatCircleDistance"
-    },
     {
       "kind": "midpoint",
       "name": "Midpoint"

@@ -2,11 +2,6 @@
 
 package geo
 
-// HaversineDistance returns the great-circle distance between a and b in kilometres.
-//
-// Deprecated: use GreatCircleDistance.
-func HaversineDistance(a, b Point) float64 { return haversine(a, b) }
-
 // Midpoint returns the point halfway between a and b on the great circle.
 func Midpoint(a, b Point) Point { return interpolate(a, b, 0.5) }
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.4.0 (2026-11-20)
+
+### Breaking changes
+
+- The deprecated `HaversineDistance` function has been removed; use `GreatCircleDistance` instead (`HaversineDistance` -> `GreatCircleDistance`).
+
 ## v0.3.2 (2026-11-19)
 
 ### Added

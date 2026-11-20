@@ -4,12 +4,6 @@ package geo
 
 import "testing"
 
-func TestHaversineDistanceDeprecated(t *testing.T) {
-	if d := HaversineDistance(Point{Lat: 52.52, Lon: 13.405}, Point{Lat: 48.8566, Lon: 2.3522}); d < 870 || d > 885 {
-		t.Fatalf("HaversineDistance: %v", d)
-	}
-}
-
 func TestMidpoint(t *testing.T) {
 	if m := Midpoint(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}); m.Lon < 4.99 || m.Lon > 5.01 {
 		t.Fatalf("Midpoint: %v", m)
