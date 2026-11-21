@@ -1,6 +1,6 @@
 {
-  "version": "0.5.1",
-  "step": 9,
+  "version": "0.5.2",
+  "step": 10,
   "fixes": 3,
   "functions": [
     {
@@ -14,7 +14,8 @@
     },
     {
       "kind": "parse",
-      "name": "ParsePoint"
+      "name": "ParsePoint",
+      "deprecatedFor": "Parse"
     },
     {
       "kind": "bearing",
@@ -23,6 +24,10 @@
     {
       "kind": "distance",
       "name": "GreatCircleDistance"
+    },
+    {
+      "kind": "parse",
+      "name": "Parse"
     }
   ]
 }

@@ -16,7 +16,7 @@ func TestFormatPoint(t *testing.T) {
 	}
 }
 
-func TestParsePoint(t *testing.T) {
+func TestParsePointDeprecated(t *testing.T) {
 	if p, err := ParsePoint(" 1.5,-2.25 "); err != nil || p.Lat != 1.5 || p.Lon != -2.25 {
 		t.Fatalf("ParsePoint: %v %v", p, err)
 	}
@@ -31,5 +31,11 @@ func TestInitialBearing(t *testing.T) {
 func TestGreatCircleDistance(t *testing.T) {
 	if d := GreatCircleDistance(Point{Lat: 52.52, Lon: 13.405}, Point{Lat: 48.8566, Lon: 2.3522}); d < 870 || d > 885 {
 		t.Fatalf("GreatCircleDistance: %v", d)
+	}
+}
+
+func TestParse(t *testing.T) {
+	if p, err := Parse(" 1.5,-2.25 "); err != nil || p.Lat != 1.5 || p.Lon != -2.25 {
+		t.Fatalf("Parse: %v %v", p, err)
 	}
 }

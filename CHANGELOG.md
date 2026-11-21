@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.5.2 (2026-11-21)
+
+### Added
+
+- `Parse`, which replaces `ParsePoint`.
+
+### Deprecated
+
+- `ParsePoint` is deprecated in favor of `Parse` and will be removed in the next minor release.
+
 ## v0.5.1 (2026-11-21)
 
 ### Fixed
