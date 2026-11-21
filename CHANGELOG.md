@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.5.1 (2026-11-21)
+
+### Fixed
+
+- Parsing accepts surrounding whitespace.
+
 ## v0.5.0 (2026-11-20)
 
 ### Breaking changes
