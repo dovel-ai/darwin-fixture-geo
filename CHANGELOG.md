@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.6.0 (2026-11-22)
+
+### Breaking changes
+
+- The deprecated `ParsePoint` function has been removed; use `Parse` instead (`ParsePoint` -> `Parse`).
+
 ## v0.5.2 (2026-11-21)
 
 ### Added

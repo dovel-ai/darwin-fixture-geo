@@ -1,6 +1,6 @@
 {
-  "version": "0.5.2",
-  "step": 10,
+  "version": "0.6.0",
+  "step": 11,
   "fixes": 3,
   "functions": [
     {
@@ -11,11 +11,6 @@
     {
       "kind": "format",
       "name": "FormatPoint"
-    },
-    {
-      "kind": "parse",
-      "name": "ParsePoint",
-      "deprecatedFor": "Parse"
     },
     {
       "kind": "bearing",

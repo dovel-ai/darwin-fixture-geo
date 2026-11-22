@@ -16,12 +16,6 @@ func TestFormatPoint(t *testing.T) {
 	}
 }
 
-func TestParsePointDeprecated(t *testing.T) {
-	if p, err := ParsePoint(" 1.5,-2.25 "); err != nil || p.Lat != 1.5 || p.Lon != -2.25 {
-		t.Fatalf("ParsePoint: %v %v", p, err)
-	}
-}
-
 func TestInitialBearing(t *testing.T) {
 	if b := InitialBearing(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}); b < 89.9 || b > 90.1 {
 		t.Fatalf("InitialBearing: %v", b)

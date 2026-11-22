@@ -8,11 +8,6 @@ func Interpolate(a, b Point, fraction float64) Point { return interpolate(a, b, 
 // FormatPoint formats p as "lat,lon" with five decimals.
 func FormatPoint(p Point) string { return formatPoint(p) }
 
-// ParsePoint reads a point written as "lat,lon".
-//
-// Deprecated: use Parse.
-func ParsePoint(s string) (Point, error) { return parsePoint(s) }
-
 // InitialBearing returns the initial bearing from a to b in degrees.
 func InitialBearing(a, b Point) float64 { return initialBearing(a, b) }
 
