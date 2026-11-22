@@ -10,9 +10,9 @@ func TestInterpolate(t *testing.T) {
 	}
 }
 
-func TestFormatPoint(t *testing.T) {
-	if s := FormatPoint(Point{Lat: 1.5, Lon: -2.25}); s != "1.50000,-2.25000" {
-		t.Fatalf("FormatPoint: %q", s)
+func TestFormat(t *testing.T) {
+	if s := Format(Point{Lat: 1.5, Lon: -2.25}); s != "1.50000,-2.25000" {
+		t.Fatalf("Format: %q", s)
 	}
 }
 

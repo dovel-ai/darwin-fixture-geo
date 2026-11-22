@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.7.0 (2026-11-22)
+
+### Breaking changes
+
+- `FormatPoint` has been renamed to `Format` (`FormatPoint` -> `Format`); its behavior is unchanged.
+
 ## v0.6.0 (2026-11-22)
 
 ### Breaking changes

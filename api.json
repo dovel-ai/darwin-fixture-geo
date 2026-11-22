@@ -1,6 +1,6 @@
 {
-  "version": "0.6.0",
-  "step": 11,
+  "version": "0.7.0",
+  "step": 12,
   "fixes": 3,
   "functions": [
     {
@@ -10,7 +10,7 @@
     },
     {
       "kind": "format",
-      "name": "FormatPoint"
+      "name": "Format"
     },
     {
       "kind": "bearing",
