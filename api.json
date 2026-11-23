@@ -1,7 +1,7 @@
 {
-  "version": "0.7.0",
-  "step": 12,
-  "fixes": 3,
+  "version": "0.7.1",
+  "step": 13,
+  "fixes": 4,
   "functions": [
     {
       "kind": "midpoint",

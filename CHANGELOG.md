@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.7.1 (2026-11-23)
+
+### Fixed
+
+- Bearings are returned in [0, 360) instead of (-180, 180].
+
 ## v0.7.0 (2026-11-22)
 
 ### Breaking changes
