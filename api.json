@@ -1,11 +1,11 @@
 {
-  "version": "0.8.0",
-  "step": 15,
+  "version": "0.9.0",
+  "step": 16,
   "fixes": 4,
   "functions": [
     {
       "kind": "midpoint",
-      "name": "Interpolate",
+      "name": "Slerp",
       "arity": 3
     },
     {

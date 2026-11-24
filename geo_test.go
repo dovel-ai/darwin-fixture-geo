@@ -4,9 +4,9 @@ package geo
 
 import "testing"
 
-func TestInterpolate(t *testing.T) {
-	if m := Interpolate(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}, 0.5); m.Lon < 4.99 || m.Lon > 5.01 {
-		t.Fatalf("Interpolate: %v", m)
+func TestSlerp(t *testing.T) {
+	if m := Slerp(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}, 0.5); m.Lon < 4.99 || m.Lon > 5.01 {
+		t.Fatalf("Slerp: %v", m)
 	}
 }
 

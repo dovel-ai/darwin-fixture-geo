@@ -2,8 +2,8 @@
 
 package geo
 
-// Interpolate returns the point on the great circle from a to b at the given fraction (0.5: halfway).
-func Interpolate(a, b Point, fraction float64) Point { return interpolate(a, b, fraction) }
+// Slerp returns the point on the great circle from a to b at the given fraction (0.5: halfway).
+func Slerp(a, b Point, fraction float64) Point { return interpolate(a, b, fraction) }
 
 // InitialBearing returns the initial bearing from a to b in degrees.
 func InitialBearing(a, b Point) float64 { return initialBearing(a, b) }

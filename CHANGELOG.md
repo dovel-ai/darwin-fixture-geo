@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.9.0 (2026-11-24)
+
+### Breaking changes
+
+- `Interpolate` has been renamed to `Slerp` (`Interpolate` -> `Slerp`); its behavior is unchanged.
+
 ## v0.8.0 (2026-11-24)
 
 ### Breaking changes
