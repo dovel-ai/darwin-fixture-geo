@@ -10,7 +10,7 @@ func TestInterpolate(t *testing.T) {
 	}
 }
 
-func TestFormat(t *testing.T) {
+func TestFormatDeprecated(t *testing.T) {
 	if s := Format(Point{Lat: 1.5, Lon: -2.25}); s != "1.50000,-2.25000" {
 		t.Fatalf("Format: %q", s)
 	}
@@ -31,5 +31,11 @@ func TestGreatCircleDistance(t *testing.T) {
 func TestParse(t *testing.T) {
 	if p, err := Parse(" 1.5,-2.25 "); err != nil || p.Lat != 1.5 || p.Lon != -2.25 {
 		t.Fatalf("Parse: %v %v", p, err)
+	}
+}
+
+func TestPointString(t *testing.T) {
+	if s := PointString(Point{Lat: 1.5, Lon: -2.25}); s != "1.50000,-2.25000" {
+		t.Fatalf("PointString: %q", s)
 	}
 }

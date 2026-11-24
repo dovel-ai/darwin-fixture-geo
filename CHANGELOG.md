@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.7.2 (2026-11-24)
+
+### Added
+
+- `PointString`, which replaces `Format`.
+
+### Deprecated
+
+- `Format` is deprecated in favor of `PointString` and will be removed in the next minor release.
+
 ## v0.7.1 (2026-11-23)
 
 ### Fixed

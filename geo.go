@@ -6,6 +6,8 @@ package geo
 func Interpolate(a, b Point, fraction float64) Point { return interpolate(a, b, fraction) }
 
 // Format formats p as "lat,lon" with five decimals.
+//
+// Deprecated: use PointString.
 func Format(p Point) string { return formatPoint(p) }
 
 // InitialBearing returns the initial bearing from a to b in degrees.
@@ -16,3 +18,6 @@ func GreatCircleDistance(a, b Point) float64 { return haversine(a, b) }
 
 // Parse reads a point written as "lat,lon".
 func Parse(s string) (Point, error) { return parsePoint(s) }
+
+// PointString formats p as "lat,lon" with five decimals.
+func PointString(p Point) string { return formatPoint(p) }

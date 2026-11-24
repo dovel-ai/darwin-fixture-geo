@@ -1,6 +1,6 @@
 {
-  "version": "0.7.1",
-  "step": 13,
+  "version": "0.7.2",
+  "step": 14,
   "fixes": 4,
   "functions": [
     {
@@ -10,7 +10,8 @@
     },
     {
       "kind": "format",
-      "name": "Format"
+      "name": "Format",
+      "deprecatedFor": "PointString"
     },
     {
       "kind": "bearing",
@@ -23,6 +24,10 @@
     {
       "kind": "parse",
       "name": "Parse"
+    },
+    {
+      "kind": "format",
+      "name": "PointString"
     }
   ]
 }
