@@ -1,17 +1,12 @@
 {
-  "version": "0.7.2",
-  "step": 14,
+  "version": "0.8.0",
+  "step": 15,
   "fixes": 4,
   "functions": [
     {
       "kind": "midpoint",
       "name": "Interpolate",
       "arity": 3
-    },
-    {
-      "kind": "format",
-      "name": "Format",
-      "deprecatedFor": "PointString"
     },
     {
       "kind": "bearing",

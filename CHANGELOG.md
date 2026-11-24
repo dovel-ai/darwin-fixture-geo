@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.8.0 (2026-11-24)
+
+### Breaking changes
+
+- The deprecated `Format` function has been removed; use `PointString` instead (`Format` -> `PointString`).
+
 ## v0.7.2 (2026-11-24)
 
 ### Added

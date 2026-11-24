@@ -10,12 +10,6 @@ func TestInterpolate(t *testing.T) {
 	}
 }
 
-func TestFormatDeprecated(t *testing.T) {
-	if s := Format(Point{Lat: 1.5, Lon: -2.25}); s != "1.50000,-2.25000" {
-		t.Fatalf("Format: %q", s)
-	}
-}
-
 func TestInitialBearing(t *testing.T) {
 	if b := InitialBearing(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}); b < 89.9 || b > 90.1 {
 		t.Fatalf("InitialBearing: %v", b)

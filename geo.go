@@ -5,11 +5,6 @@ package geo
 // Interpolate returns the point on the great circle from a to b at the given fraction (0.5: halfway).
 func Interpolate(a, b Point, fraction float64) Point { return interpolate(a, b, fraction) }
 
-// Format formats p as "lat,lon" with five decimals.
-//
-// Deprecated: use PointString.
-func Format(p Point) string { return formatPoint(p) }
-
 // InitialBearing returns the initial bearing from a to b in degrees.
 func InitialBearing(a, b Point) float64 { return initialBearing(a, b) }
 
