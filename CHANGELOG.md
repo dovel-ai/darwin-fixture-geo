@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.9.2 (2026-11-25)
+
+### Added
+
+- `Lerp`, which replaces `Slerp`.
+
+### Deprecated
+
+- `Slerp` is deprecated in favor of `Lerp` and will be removed in the next minor release.
+
 ## v0.9.1 (2026-11-25)
 
 ### Fixed

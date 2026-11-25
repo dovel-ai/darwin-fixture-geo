@@ -1,12 +1,13 @@
 {
-  "version": "0.9.1",
-  "step": 17,
+  "version": "0.9.2",
+  "step": 18,
   "fixes": 5,
   "functions": [
     {
       "kind": "midpoint",
       "name": "Slerp",
-      "arity": 3
+      "arity": 3,
+      "deprecatedFor": "Lerp"
     },
     {
       "kind": "bearing",
@@ -23,6 +24,11 @@
     {
       "kind": "format",
       "name": "PointString"
+    },
+    {
+      "kind": "midpoint",
+      "name": "Lerp",
+      "arity": 3
     }
   ]
 }

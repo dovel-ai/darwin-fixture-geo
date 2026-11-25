@@ -4,7 +4,7 @@ package geo
 
 import "testing"
 
-func TestSlerp(t *testing.T) {
+func TestSlerpDeprecated(t *testing.T) {
 	if m := Slerp(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}, 0.5); m.Lon < 4.99 || m.Lon > 5.01 {
 		t.Fatalf("Slerp: %v", m)
 	}
@@ -31,5 +31,11 @@ func TestParse(t *testing.T) {
 func TestPointString(t *testing.T) {
 	if s := PointString(Point{Lat: 1.5, Lon: -2.25}); s != "1.50000,-2.25000" {
 		t.Fatalf("PointString: %q", s)
+	}
+}
+
+func TestLerp(t *testing.T) {
+	if m := Lerp(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}, 0.5); m.Lon < 4.99 || m.Lon > 5.01 {
+		t.Fatalf("Lerp: %v", m)
 	}
 }

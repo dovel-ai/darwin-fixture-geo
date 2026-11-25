@@ -3,6 +3,8 @@
 package geo
 
 // Slerp returns the point on the great circle from a to b at the given fraction (0.5: halfway).
+//
+// Deprecated: use Lerp.
 func Slerp(a, b Point, fraction float64) Point { return interpolate(a, b, fraction) }
 
 // InitialBearing returns the initial bearing from a to b in degrees.
@@ -16,3 +18,6 @@ func Parse(s string) (Point, error) { return parsePoint(s) }
 
 // PointString formats p as "lat,lon" with five decimals.
 func PointString(p Point) string { return formatPoint(p) }
+
+// Lerp returns the point on the great circle from a to b at the given fraction (0.5: halfway).
+func Lerp(a, b Point, fraction float64) Point { return interpolate(a, b, fraction) }
