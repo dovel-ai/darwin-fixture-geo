@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.9.1 (2026-11-25)
+
+### Fixed
+
+- Distances between identical points are exactly 0.
+
 ## v0.9.0 (2026-11-24)
 
 ### Breaking changes
