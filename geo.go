@@ -2,8 +2,8 @@
 
 package geo
 
-// InitialBearing returns the initial bearing from a to b in degrees.
-func InitialBearing(a, b Point) float64 { return initialBearing(a, b) }
+// Heading returns the initial bearing from a to b in degrees.
+func Heading(a, b Point) float64 { return initialBearing(a, b) }
 
 // GreatCircleDistance returns the great-circle distance between a and b in kilometres.
 func GreatCircleDistance(a, b Point) float64 { return haversine(a, b) }

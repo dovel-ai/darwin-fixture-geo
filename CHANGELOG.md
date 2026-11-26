@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.11.0 (2026-11-26)
+
+### Breaking changes
+
+- `InitialBearing` has been renamed to `Heading` (`InitialBearing` -> `Heading`); its behavior is unchanged.
+
 ## v0.10.0 (2026-11-26)
 
 ### Breaking changes

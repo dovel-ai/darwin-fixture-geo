@@ -4,9 +4,9 @@ package geo
 
 import "testing"
 
-func TestInitialBearing(t *testing.T) {
-	if b := InitialBearing(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}); b < 89.9 || b > 90.1 {
-		t.Fatalf("InitialBearing: %v", b)
+func TestHeading(t *testing.T) {
+	if b := Heading(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}); b < 89.9 || b > 90.1 {
+		t.Fatalf("Heading: %v", b)
 	}
 }
 
