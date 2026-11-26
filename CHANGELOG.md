@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.10.0 (2026-11-26)
+
+### Breaking changes
+
+- The deprecated `Slerp` function has been removed; use `Lerp` instead (`Slerp` -> `Lerp`).
+
 ## v0.9.2 (2026-11-25)
 
 ### Added
