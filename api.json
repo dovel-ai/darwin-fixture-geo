@@ -1,11 +1,12 @@
 {
-  "version": "0.11.1",
-  "step": 21,
+  "version": "0.11.2",
+  "step": 22,
   "fixes": 6,
   "functions": [
     {
       "kind": "bearing",
-      "name": "Heading"
+      "name": "Heading",
+      "deprecatedFor": "Course"
     },
     {
       "kind": "distance",
@@ -23,6 +24,10 @@
       "kind": "midpoint",
       "name": "Lerp",
       "arity": 3
+    },
+    {
+      "kind": "bearing",
+      "name": "Course"
     }
   ]
 }

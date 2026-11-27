@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.11.2 (2026-11-27)
+
+### Added
+
+- `Course`, which replaces `Heading`.
+
+### Deprecated
+
+- `Heading` is deprecated in favor of `Course` and will be removed in the next minor release.
+
 ## v0.11.1 (2026-11-27)
 
 ### Fixed

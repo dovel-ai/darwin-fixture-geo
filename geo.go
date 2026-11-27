@@ -3,6 +3,8 @@
 package geo
 
 // Heading returns the initial bearing from a to b in degrees.
+//
+// Deprecated: use Course.
 func Heading(a, b Point) float64 { return initialBearing(a, b) }
 
 // GreatCircleDistance returns the great-circle distance between a and b in kilometres.
@@ -16,3 +18,6 @@ func PointString(p Point) string { return formatPoint(p) }
 
 // Lerp returns the point on the great circle from a to b at the given fraction (0.5: halfway).
 func Lerp(a, b Point, fraction float64) Point { return interpolate(a, b, fraction) }
+
+// Course returns the initial bearing from a to b in degrees.
+func Course(a, b Point) float64 { return initialBearing(a, b) }

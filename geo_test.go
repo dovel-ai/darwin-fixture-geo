@@ -4,7 +4,7 @@ package geo
 
 import "testing"
 
-func TestHeading(t *testing.T) {
+func TestHeadingDeprecated(t *testing.T) {
 	if b := Heading(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}); b < 89.9 || b > 90.1 {
 		t.Fatalf("Heading: %v", b)
 	}
@@ -31,5 +31,11 @@ func TestPointString(t *testing.T) {
 func TestLerp(t *testing.T) {
 	if m := Lerp(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}, 0.5); m.Lon < 4.99 || m.Lon > 5.01 {
 		t.Fatalf("Lerp: %v", m)
+	}
+}
+
+func TestCourse(t *testing.T) {
+	if b := Course(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}); b < 89.9 || b > 90.1 {
+		t.Fatalf("Course: %v", b)
 	}
 }
