@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.11.1 (2026-11-27)
+
+### Fixed
+
+- Latitudes outside [-90, 90] are clamped before any calculation.
+
 ## v0.11.0 (2026-11-26)
 
 ### Breaking changes
