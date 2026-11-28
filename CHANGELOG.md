@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.12.0 (2026-11-28)
+
+### Breaking changes
+
+- The deprecated `Heading` function has been removed; use `Course` instead (`Heading` -> `Course`).
+
 ## v0.11.2 (2026-11-27)
 
 ### Added

@@ -1,13 +1,8 @@
 {
-  "version": "0.11.2",
-  "step": 22,
+  "version": "0.12.0",
+  "step": 23,
   "fixes": 6,
   "functions": [
-    {
-      "kind": "bearing",
-      "name": "Heading",
-      "deprecatedFor": "Course"
-    },
     {
       "kind": "distance",
       "name": "GreatCircleDistance"

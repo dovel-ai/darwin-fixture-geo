@@ -4,12 +4,6 @@ package geo
 
 import "testing"
 
-func TestHeadingDeprecated(t *testing.T) {
-	if b := Heading(Point{Lat: 0, Lon: 0}, Point{Lat: 0, Lon: 10}); b < 89.9 || b > 90.1 {
-		t.Fatalf("Heading: %v", b)
-	}
-}
-
 func TestGreatCircleDistance(t *testing.T) {
 	if d := GreatCircleDistance(Point{Lat: 52.52, Lon: 13.405}, Point{Lat: 48.8566, Lon: 2.3522}); d < 870 || d > 885 {
 		t.Fatalf("GreatCircleDistance: %v", d)

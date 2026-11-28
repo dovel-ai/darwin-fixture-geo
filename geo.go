@@ -2,11 +2,6 @@
 
 package geo
 
-// Heading returns the initial bearing from a to b in degrees.
-//
-// Deprecated: use Course.
-func Heading(a, b Point) float64 { return initialBearing(a, b) }
-
 // GreatCircleDistance returns the great-circle distance between a and b in kilometres.
 func GreatCircleDistance(a, b Point) float64 { return haversine(a, b) }
 
